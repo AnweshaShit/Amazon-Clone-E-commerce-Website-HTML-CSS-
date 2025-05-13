@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+/** NAVBAR **/
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.border{
+    border: 1px solid transparent;
+    height: 50px;
+    width: max-content;
+    padding: 0px 5px;
+}
+.border:hover{
+    border: 1px solid white;
+}
+/** box 1 in navbar(amazon logo) **/
+.nav-logo{
+    height: 50px;
+    width: 114px
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+/** box 2 in navbar(location) **/
+.nav-location{
+    height: 50px;
+    background-size: cover;
+    align-content: center;
+}
+.deliver{
+    color: #cccccc;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.location{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 3px;
+}
+.location-icon{
+    display: flex;
+    align-items: center;
+}
+/** box 3 in navbar(search bar) **/
+.nav-search{
+    height: 42px;
+    width: 630px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#0f1111;
+    border: 2px solid transparent; 
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+.nav-search:focus-within{
+    border: 2px solid  #febd68;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 51px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    border:none;
+}
+.search-input{
+    width: 560px;
+    font-size: 1rem;
+    border: none;
+}
+.search-input:focus {
+    outline: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;  /**horizontal center*/
+    align-items: center;        /**verticallly center*/
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #0f1111;
+}
+/** box 4 in navbar(language) **/
+.nav-language{
+    display: flex;
+    align-items: center;
+}
+.language-logo{
+    background: url("united-states-flag-icon.svg");
+    height: 15px;
+    width: 20px;
+}
+.language-select{
+    background: #0f1111;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
+/** box 5 in navbar(sign in) **/
+.nav-sign-in{
+    align-content: center;
+    justify-content:center ;
+}
+.signin-first{
+    font-size: 12px;
+}
+.signin-second{
+    font-size: 14px;
+    font-weight: bold;
+    background: #0f1111;
+    color: white;
+    border: none;
+}
+/** box 6 in navbar(return order) **/
+.nav-return{
+    align-content: center;
+    justify-content:center ;
+}
+.return{
+    font-size: 12px;
+}
+.order{
+    font-size: 14px;
+    font-weight: bold ;
+}
+/** box 7 in navbar(cart) **/
+.nav-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-icon{
+    font-size: 26px;
+}
+.cart{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 6px;
+}
+
+/** PANEL **/
+.border-panel{
+    border: 1px solid transparent;
+    height: 39px;
+    width: max-content;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-panel:hover{
+    border: 1px solid white;
+}
+/** box 1 in panel (All) **/
+.panel{
+    height: 39px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.panel-all i {
+    margin-right: 4px; /* Adds space between the icon and text */
+}
+.panel-options a{
+    display: inline-flex;  
+    height: 39px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/** Hero Section **/
+.hero-section{
+    background-image: url(Hero_image.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.hero-msg{
+    background-color: rgba(255, 255, 255, 0.984);
+    color: #0f1111;
+    height: 40px;
+    width: 97%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:250px
+}
+.hero-msg a{
+    color: #007185;
+}
+.hero-msg a:hover{
+    text-decoration: underline;
+}
+
+/** Shop Section **/
+/** First Box **/
+.shop-section {
+    background: linear-gradient(
+        to bottom,
+        #fcd200 0%,
+        #fcd200 10%,
+        rgba(253, 249, 225, 0.916) 30%,
+        rgba(253, 249, 225, 0.916) 100%
+    );
+    height: 120%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: -90px;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: white;
+    width: 23%;
+    padding: 20px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px; /* Adjust based on the tallest box */
+    margin-bottom: 20px;
+}
+.box-content{
+    margin-left: 20px ;
+    margin-right: 20px;    
+}
+.box1-img{
+    height: 303px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.box-content h2{
+    font-size: 20px;
+}
+.box-content p{
+    color: #007185;
+    font-size: 13px;
+}
+p.box-content:hover {
+    text-decoration: #0f1111;
+}
+
+/** Second Box **/
+.four_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%; /* Two items per row */
+    margin-bottom: 15px;
+}
+.headset, .keyboard, .mouse, .chair{
+    height: 115px;
+    width: 125px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;    
+}
+p.item-label {
+    font-size: 13px;
+    color: #0f1111; 
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+/** Third Box **/
+.bottom, .top, .dress, .shoe{
+    height: 115px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;  
+}
+/** Fourth Box **/
+.cleaningtool, .homestorage, .homedecore, .bedding{
+    height: 103px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;  
+}
+/** Fifth Box **/
+.kitchen, .homeimprovement, .decore, .beddingbath{
+    height: 115px;
+    width: 125px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px; 
+}
+/** Sixth Box **/
+.box6-img{
+    height: 320px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/** Seventh Box **/
+.dining, .home, .kitchenthings, .health{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Eighth Box **/
+.watch{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/** Eleventh Box **/
+.smartphones, .watches, .headphones, .tablets{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Twelveth Box **/
+.toys{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Thirteenth Box **/
+.electronics{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Fourteenth Box **/
+.kitchen-appliences{
+    height: 110px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Fifteenth Box **/
+.top-deals{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** sixteenth Box **/
+.toys{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** seventeenth Box **/
+.beauty{
+    height: 108px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** eightteenth Box **/
+.gaming-merchandise{
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+/** Ninth Box **/
+.big-box {
+    background-color: white;
+    padding: 20px;
+    margin:0px 15px 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+.big-box-content h2 {
+    margin-bottom: 20px;
+}
+.highlight {
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+.multiple-contents {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+}
+.multiple-contents a {
+    scroll-snap-align: start;
+    text-decoration: none;
+}
+
+.multiple-contents img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+}
+
+/** Footer **/
+.footer{
+    margin-top: 15px;
+}
+.footer-panel1{
+    background-color: #37475a;
+    color: white;
+    font-size: 13px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 330px;
+    display: flex; /*lists will be in rows*/
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 35px;
+}
+ul p{
+    font-weight: bold;
+}
+ul a{
+    color: #dddddd;
+    display: block; /* list will be in one line vertically */
+    font-size: 14px;
+    margin-top: 10px;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+
+.footer-panel3 {
+    height: 118px;
+    background-color: #222f3d;
+    border-top: 0.1px solid rgba(128, 128, 128, 0.662);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    margin-right: 20px;
+}
+.footer-select {
+    background-color: #222f3d;
+    border: 1px solid #848688;
+    color: rgba(241, 241, 241, 0.801);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.footer-select .language{
+    color: rgba(241, 241, 241, 0.801);
+    background: none;
+    border: none;
+}
+.flag-icon {
+    height: 14px;
+}
+
+.footer-panel4{
+    height: 320px;
+    background-color: #131a22;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 120px;
+    display: flex;
+    justify-content:center;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 0.5fr);
+    width: 100%;
+}
+.footer-item {
+    line-height: 1;
+    width: 100px;
+    text-decoration: none;
+}
+.footer-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #dddddd;
+    margin-bottom: 4px;
+}
+.footer-title:hover{
+    text-decoration: underline;
+}
+.footer-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    justify-content:space-between;
+}
+.footer-desc:hover{
+    text-decoration: underline;
+}
+
+.footer-panel5{
+    height: 76px;
+    background-color: #131a22;
+    font-size: 12px;
+}
+.terms-condition{
+    text-align: center;
+}
+.terms-condition a{
+    color: #dddddd;
+    text-decoration: none;
+    padding: 6px;
+}
+.terms-condition  a:hover{
+   text-decoration: underline;
+}
+.copywrite{
+    color: #dddddd;
+    text-align: center;
+    padding: 4px;
+}
+
+  
